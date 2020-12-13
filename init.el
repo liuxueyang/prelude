@@ -39,6 +39,12 @@
 ;; You may delete these explanatory comments.
                                         ;(package-initialize)
 
+(setq package-archives
+      '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+        ("melpa" . "http://elpa.emacs-china.org/melpa/")
+	      ;; ("marmalade" . "https://marmalade-repo.org/packages/")
+        ))
+
 (defvar prelude-user
   (getenv
    (if (equal system-type 'windows-nt) "USERNAME" "USER")))
